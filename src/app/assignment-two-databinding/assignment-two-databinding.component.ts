@@ -11,4 +11,8 @@ export class AssignmentTwoDatabindingComponent implements OnInit {
   username = '';
 
   ngOnInit(): void {}
+
+  isUsernameEmpty() {
+    return this.username === '';
+  }
 }
