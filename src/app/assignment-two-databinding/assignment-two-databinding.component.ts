@@ -15,4 +15,8 @@ export class AssignmentTwoDatabindingComponent implements OnInit {
   isUsernameEmpty() {
     return this.username === '';
   }
+
+  resetUsername() {
+    this.username = '';
+  }
 }
