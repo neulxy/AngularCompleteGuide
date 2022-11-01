@@ -8,5 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AssignmentTwoDatabindingComponent implements OnInit {
   constructor() {}
 
+  username = '';
+
   ngOnInit(): void {}
 }
