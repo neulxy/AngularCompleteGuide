@@ -4,4 +4,8 @@
 <p *ngIf="displayContent">Secret Password = tuna</p>
 <hr />
 <label>Click History</label>
-<p *ngFor="let log of clickLogs">{{ log }}</p>
+<div *ngFor="let log of clickLogs">
+  <p [ngStyle]="getStyle(log)">
+    {{ log }}
+  </p>
+</div>

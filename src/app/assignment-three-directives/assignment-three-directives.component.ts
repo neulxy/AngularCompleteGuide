@@ -17,5 +17,12 @@ export class AssignmentThreeDirectivesComponent implements OnInit {
     this.clickLogs.push(++this.index);
   }
 
+  getStyle(logIndex: any) {
+    if (logIndex >= 5) {
+      return { backgroundColor: 'blue' };
+    }
+    return null;
+  }
+
   ngOnInit(): void {}
 }
