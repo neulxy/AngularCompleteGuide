@@ -1,4 +1,7 @@
-<button class="btn btn-primary" (click)="displayContent = !displayContent">
+<button class="btn btn-primary" (click)="toggleAndLogBtnClick()">
   Display Details
 </button>
 <p *ngIf="displayContent">Secret Password = tuna</p>
+<hr />
+<label>Click History</label>
+<p *ngFor="let log of clickLogs">{{ log }}</p>
