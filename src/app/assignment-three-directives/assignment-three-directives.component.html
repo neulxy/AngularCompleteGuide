@@ -4,10 +4,10 @@
 <p *ngIf="displayContent">Secret Password = tuna</p>
 <hr />
 <label>Click History</label>
-<div *ngFor="let log of clickLogs">
+<div *ngFor="let log of clickLogs; let i = index">
   <p
-    [ngStyle]="log >= 5 ? { backgroundColor: 'blue' } : null"
-    [ngClass]="{ 'bigger-item': log >= 5 }"
+    [ngStyle]="i >= 4 ? { backgroundColor: 'blue' } : null"
+    [ngClass]="{ 'bigger-item': i >= 4 }"
   >
     {{ log }}
   </p>

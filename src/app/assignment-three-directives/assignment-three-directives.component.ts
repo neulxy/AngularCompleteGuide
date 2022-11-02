@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AssignmentThreeDirectivesComponent implements OnInit {
   constructor() {}
-  clickLogs: number[] = [];
+  clickLogs: any[] = [];
   index = 0;
 
   displayContent = true;
 
   toggleAndLogBtnClick() {
     this.displayContent = !this.displayContent;
-    this.clickLogs.push(++this.index);
+    this.clickLogs.push(new Date());
   }
 
   getStyle(logIndex: any) {
