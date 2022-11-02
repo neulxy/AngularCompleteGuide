@@ -5,7 +5,7 @@
 <hr />
 <label>Click History</label>
 <div *ngFor="let log of clickLogs">
-  <p [ngStyle]="getStyle(log)">
+  <p [ngStyle]="getStyle(log)" [ngClass]="{ 'bigger-item': log >= 5 }">
     {{ log }}
   </p>
 </div>
