@@ -1,2 +1,4 @@
-<button class="btn btn-primary">Display Details</button>
-<p>Secret Password = tuna</p>
+<button class="btn btn-primary" (click)="displayContent = !displayContent">
+  Display Details
+</button>
+<p *ngIf="displayContent">Secret Password = tuna</p>

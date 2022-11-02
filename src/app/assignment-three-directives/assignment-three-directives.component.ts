@@ -8,5 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AssignmentThreeDirectivesComponent implements OnInit {
   constructor() {}
 
+  displayContent = true;
+
   ngOnInit(): void {}
 }
